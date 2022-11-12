@@ -17,7 +17,7 @@ namespace LineComparison
                 this.y1 = y1;
                 this.y2 = y2;
             }
-            public void Calculate()
+            public void Length()
             {
                 double length = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
                 Console.WriteLine("Length of First Line is: " + length);
