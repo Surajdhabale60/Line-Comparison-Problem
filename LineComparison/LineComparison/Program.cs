@@ -23,7 +23,9 @@ namespace LineComparison
                 Console.WriteLine("Both Lines are Equal");
             }
             else
+            {
                 Console.WriteLine("Not Equal");
+            }
         }
     }
 }
