@@ -7,8 +7,8 @@ namespace LineComparison
     {
         public static void Main(string[] args)
         {
-            LineMain lineMain = new LineMain(1,2,3,4);
-            lineMain.Caculate();
+            LineMain lineMain = new LineMain(1, 2, 3, 4);
+            lineMain.Length();
 
 
             LineMain lineMain1 = new LineMain(1, 2, 3, 4);
@@ -23,7 +23,26 @@ namespace LineComparison
                 Console.WriteLine("Both Lines are Equal");
             }
             else
+            {
                 Console.WriteLine("Not Equal");
+            }
+
+
+
+            int val = line1.CompareTo(line2);
+            Console.WriteLine(val + "  " + line1 + "  " + line2);
+            if (val == 0)
+            {
+                Console.WriteLine("line one is Equal");
+            }
+            if (val == 1)
+            {
+                Console.WriteLine("Line one is Greater");
+            }
+            else
+            {
+                Console.WriteLine("Line one is Smaller");
+            }
         }
     }
 }

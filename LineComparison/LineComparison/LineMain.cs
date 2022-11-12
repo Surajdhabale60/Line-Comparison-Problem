@@ -17,13 +17,19 @@ namespace LineComparison
             this.y1 = _y1;
             this.y2 = _y2;
         }
-        public void Caculate()
+        public void Length()
         {
             double linelength = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             Console.WriteLine("Length of First Line is: " + linelength);
         }
 
         public double CompareLength()
+        {
+            double linelength = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            return linelength;
+        }
+
+        public double Caculate()
         {
             double linelength = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             return linelength;
