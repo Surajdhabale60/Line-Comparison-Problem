@@ -1,10 +1,13 @@
-﻿namespace LineComparison
+﻿using static LineComparison.LineMain;
+
+namespace LineComparison
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Comparison Problem");
+            LineMain lineMain = new LineMain(1,2,3,4);
+            lineMain.Calculate();
         }
     }
 }
