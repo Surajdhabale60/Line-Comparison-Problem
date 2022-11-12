@@ -9,18 +9,24 @@ namespace LineComparison
 {
     internal class LineMain
     {
-             int x1, x2, y1, y2;
-            public LineMain(int x1, int x2, int y1, int y2)
-            {
-                this.x1 = x1;
-                this.x2 = x2;
-                this.y1 = y1;
-                this.y2 = y2;
-            }
-            public void Calculate()
-            {
-                double length = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-                Console.WriteLine("Length of First Line is: " + length);
-            }
+        int x1, x2, y1, y2;
+        public LineMain(int _x1, int _x2, int _y1, int _y2)
+        {
+            this.x1 = _x1;
+            this.x2 = _x2;
+            this.y1 = _y1;
+            this.y2 = _y2;
+        }
+        public void Caculate()
+        {
+            double linelength = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            Console.WriteLine("Length of First Line is: " + linelength);
+        }
+
+        public double CompareLength()
+        {
+            double linelength = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            return linelength;
+        }
     }
 }
